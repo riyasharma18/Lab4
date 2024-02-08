@@ -12,4 +12,5 @@
 ## Screenshots
 ### Exercise B
 ![Exercise B final output](https://github.com/riyasharma18/Lab4/blob/main/ExerciseB.gif)
+### Exercise C
 ![Exercise C final output](https://github.com/riyasharma18/Lab4/blob/main/ExerciseC.gif)
