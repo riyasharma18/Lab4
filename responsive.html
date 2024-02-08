@@ -1,9 +1,9 @@
 <!--
 =========================================================
-Name        : index.html
+Name        : responsive.html
 Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Joan Osike and Riya Sharma
+Submission  : February 7th 2024
 Description : Responsive Layouts.
 =========================================================
 -->
@@ -16,67 +16,101 @@ Description : Responsive Layouts.
 		This tag is essential for responsive design as it tells the browser how to control the page's dimensions and scaling.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
 	<!-- First, link the menu.css file here -->
+	<link rel = "stylesheet" href = "menu.css">
 
-	<style>	
-		/* Remove borders at the end, they have been add just for detecting positions of items*/	
-		div {
-			border: 1px dashed gray;	
-		}
-		.row{ 
-			border: 1px solid red;			
-		}
-		.large {
-			border: 1px solid blue;	
-		}
-		.medium {
-			border: 1px solid green;	
-		}
-		.small {
-			border: 1px solid yellow;	
-		}		
-	</style>
 
     <style>
 		body { margin: 0; padding: 0;}
 		img { max-width: 100%; height: auto; }
-        .container { width: 100%;}
-        .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; }        
+        .container { width: 100%; box-sizing: border-box;}
+        .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px;}        
         .main { padding: 15px; margin-left: 150px;}		
         .footer { position: fixed; bottom: 0; width: 100%;}
-        .news-item { padding: 10px; }
+        .news-item { padding: 10px; width: 100%;}
 		
 		.row { 
-			/*I need some CSS codes.*/		
+			/*I need some CSS codes.*/
+			margin: 0px; 
+			padding: 0px;
+			width: 100%;
 		}
 
 		.large, .medium, .small {
 			/*I need some CSS codes.*/
+			box-sizing: border-box;
 		}
 		
 		.gap {
+			height: 100px;
+			width: 100%;
+			clear: both;
 			/*I need some CSS codes.*/
 		}
 
 		@media screen and (min-width: 769px) {			
 			.large { 
 				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+				width: 70%;
+				float: right;
+
 			}
 			.small { 
 				/*I need some CSS codes.*/
+				width: 30%;
+				float: left;
+
 			 }
 		}
 
         @media screen and (max-width: 768px) {
             /*I need some CSS codes.*/
+			.main {margin-left: 0px;}	
+
+			.menu { 
+    			width: 100%;
+				text-align: center;
+			}
+			.large { 
+				width: 100%;
+
+			}
+			.medium { 
+				width: 60%;
+				float: right;
+
+			}
+			.small { 
+				width: 40%;
+				float: left;
+
+			 }
         }
 
         @media screen and (max-width: 480px) {
 			/*I need some CSS codes.*/
+			.main {margin-left: 0px;}
+			.menu { 
+    			width: 100%;
+				text-align: center;
+			}
+			.large { 
+				width: 100%;
+			}
+			.medium { 
+				width: 100%;
+			}
+			.small { 
+				width: 100%;
+			 }
+			 .h1 {
+				font-size: 18px;
+			 }
         }
 
         
@@ -135,7 +169,7 @@ Description : Responsive Layouts.
 				<!-- Medium news item -->
 				<div class="medium news-item">
 					<header>
-						<h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
+						<h1>Joan Osike Takes a Historic Spacewalk Near the ISS</h1>
 					</header>
 					<img src="images/medium.jpg" alt="Medium Image">
 					<article>
