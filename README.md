@@ -4,9 +4,12 @@
 * We were able to practice using Flex
 
 ## Team Members
-| Name    |
-| --------|
-| X Y     |
-| W Z     |
+| Name            |
+| --------        |
+| Joan Osike      |
+| Riya Sharma     |
 
 ## Screenshots
+### Exercise B
+![Exercise B final output](https://github.com/riyasharma18/Lab4/blob/main/ExerciseB.gif)
+![Exercise C final output](https://github.com/riyasharma18/Lab4/blob/main/ExerciseC.gif)
